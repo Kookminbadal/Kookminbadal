@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/itemname"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center" />
+        android:layout_height="30dp"
+        android:background="#736c65"
+        android:textSize="@dimen/textsize" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="@dimen/textsize" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,25 +27,30 @@
         <TextView
             android:id="@+id/locatext"
             android:layout_width="0px"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="asdf"
-            android:textSize="20sp" />
+            android:background="#a2a2a2"
+            android:gravity="center"
+            android:textSize="@dimen/textsize" />
 
         <TextView
             android:id="@+id/timetext"
             android:layout_width="0px"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:layout_weight="1"
-            android:text="qwer"
-            android:textSize="20sp" />
+            android:background="#a2a2a2"
+            android:gravity="center"
+            android:textSize="@dimen/textsize" />
 
         <TextView
             android:id="@+id/peopletext"
             android:layout_width="0px"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="zxvc"
-            android:textSize="20sp" />
+            android:background="#a2a2a2"
+            android:gravity="center"
+            android:textSize="@dimen/textsize" />
     </LinearLayout>
 </LinearLayout>

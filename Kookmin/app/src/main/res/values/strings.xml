@@ -9,4 +9,6 @@
     <string name="people">인원</string>
     <string name="registration">등록</string>
     <string name="selpeople">인원선택</string>
+    <string name="information">정보</string>
+    <string name="word">한마디</string>
 </resources>

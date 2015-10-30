@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TimePicker;
@@ -17,16 +18,19 @@ public class AddItem extends Activity {
     private EditText titleEdt;
     private EditText locaEdt;
     private EditText peopleEdt;
+    private EditText wordEdt;
     private int mHour, mMinute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.item_view);
 
         titleEdt = (EditText) findViewById(R.id.titleedt);
         locaEdt = (EditText) findViewById(R.id.locationedt);
         peopleEdt = (EditText) findViewById(R.id.peopleedt);
+        wordEdt = (EditText) findViewById(R.id.wordedt);
 
         findViewById(R.id.timebtn).setOnClickListener(onClick);
         findViewById(R.id.registration).setOnClickListener(onClick);
@@ -43,6 +47,7 @@ public class AddItem extends Activity {
                     item.setHour(String.valueOf(mHour));
                     item.setMinute(String.valueOf(mMinute));
                     item.setPeople(peopleEdt.getText().toString());
+                    item.setWord(wordEdt.getText().toString());
                     ItemArrayList.getInstance().add(item);
                     setResult(RESULT_OK);
                     finish();

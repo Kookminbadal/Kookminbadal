@@ -10,6 +10,8 @@ import android.widget.TextView;
 import com.example.kookmin.R;
 import com.example.kookmin.item.Item;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 /**
@@ -66,6 +68,9 @@ public class ItemList extends BaseAdapter {
 
         TextView people = (TextView) convertView.findViewById(R.id.peopletext);
         people.setText(itemList.get(position).getPeople() + "명");
+
+        TextView word = (TextView) convertView.findViewById(R.id.word);
+        word.setText(itemList.get(position).getWord());
 
         return convertView;
     }

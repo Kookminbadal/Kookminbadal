@@ -11,6 +11,7 @@ public class Item implements Serializable {
     private String hour;
     private String minute;
     private String people;
+    private String word;
 
     public Item() {
         title = "";
@@ -18,14 +19,16 @@ public class Item implements Serializable {
         hour = "";
         minute = "";
         people = "";
+        word = "";
     }
 
-    public Item(String title, String location, String hour, String minute, String people) {
+    public Item(String title, String location, String hour, String minute, String people, String word) {
         this.title = title;
         this.location = location;
         this.hour = hour;
         this.minute = minute;
         this.people = people;
+        this.word = word;
     }
 
     public String getLocation() {
@@ -48,6 +51,10 @@ public class Item implements Serializable {
         return people;
     }
 
+    public String getWord() {
+        return word;
+    }
+
     public void setLocation(String location) {
         this.location = location;
     }
@@ -66,5 +73,9 @@ public class Item implements Serializable {
 
     public void setPeople(String people) {
         this.people = people;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
     }
 }

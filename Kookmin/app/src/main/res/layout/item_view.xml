@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title"
-        android:textSize="20sp" />
+        android:textSize="@dimen/textsize" />
 
     <EditText
         android:id="@+id/titleedt"
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/location"
-        android:textSize="20sp" />
+        android:textSize="@dimen/textsize" />
 
     <EditText
         android:id="@+id/locationedt"
@@ -31,19 +31,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/time"
-        android:textSize="20sp" />
+        android:textSize="@dimen/textsize" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/selpeople"
-        android:textSize="20sp" />
+        android:textSize="@dimen/textsize" />
 
     <EditText
         android:id="@+id/peopleedt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numeric="integer" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/word"
+        android:textSize="@dimen/textsize" />
+
+    <EditText
+        android:id="@+id/wordedt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/registration"

@@ -20,6 +20,9 @@
         <activity
             android:name=".item.AddItem"
             android:label="@string/add" />
+        <activity
+            android:name=".item.ItemInformation"
+            android:label="@string/information" />
     </application>
 
 </manifest>

@@ -3,21 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f1f1f1"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/addbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/titlebar"
+        android:scaleType="fitCenter" />
 
-    <ListView
-        android:id="@+id/itemlist"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/boardbtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/board_press"
+            android:onClick="fragmentMenuClick" />
+
+        <ImageButton
+            android:id="@+id/menubtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu_press"
+            android:onClick="fragmentMenuClick" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/addbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/newwrite"
+        android:scaleType="fitCenter"
+        android:onClick="fragmentMenuClick"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
