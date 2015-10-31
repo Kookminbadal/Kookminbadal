@@ -2,29 +2,80 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/activitymargin"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/nameinfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="#736c65"
+        android:textSize="@dimen/textsize" />
+
+    <TextView
+        android:id="@+id/wordinfo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
         android:textSize="@dimen/textsize" />
 
     <TextView
         android:id="@+id/locainfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/textsize" />
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="#a2a2a2"
+        android:gravity="center"
+        android:textSize="@dimen/infotextsize" />
 
-    <TextView
-        android:id="@+id/timeinfo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/textsize" />
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/peopleinfo"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/timeinfo"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_weight="1"
+            android:background="#a2a2a2"
+            android:gravity="center"
+            android:textSize="@dimen/infotextsize" />
+
+        <TextView
+            android:id="@+id/peopleinfo"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1"
+            android:background="#a2a2a2"
+            android:gravity="center"
+            android:textSize="@dimen/infotextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/textsize" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/commentbtn"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/comment"/>
+
+        <ImageView
+            android:id="@+id/joinbtn"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/eat"/>
+    </LinearLayout>
 </LinearLayout>

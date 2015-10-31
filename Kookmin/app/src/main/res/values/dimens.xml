@@ -4,6 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="textsize">20sp</dimen>
-    <dimen name="margin">5dp</dimen>
+    <dimen name="infotextsize">30sp</dimen>
+    <dimen name="margin">2.5dp</dimen>
     <dimen name="activitymargin">15dp</dimen>
 </resources>

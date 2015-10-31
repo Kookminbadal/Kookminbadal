@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kookmin">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".mainactivity.MainActivity"
+            android:name=".splash.Splash"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,12 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".item.AddItem"
-            android:label="@string/add" />
-        <activity
-            android:name=".item.ItemInformation"
-            android:label="@string/information" />
-    </application>
+        <activity android:name=".mainactivity.MainActivity"></activity>
+        <activity android:name=".login.RegisterForm"></activity>
+        <activity android:name=".login.LoginForm"></activity>
+        <activity android:name=".Menu"></activity>
+   </application>
 
 </manifest>

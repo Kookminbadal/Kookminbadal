@@ -1,65 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/additemscroll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/additemview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:textSize="@dimen/textsize" />
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activitymargin"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/titleedt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/titleimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/writetitle" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/location"
-        android:textSize="@dimen/textsize" />
+        <EditText
+            android:id="@+id/titleedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleimg"
+            android:background="#ffffff" />
 
-    <EditText
-        android:id="@+id/locationedt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/wordedt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/titleimg"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff" />
 
-    <Button
-        android:id="@+id/timebtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/time"
-        android:textSize="@dimen/textsize" />
+        <ImageView
+            android:id="@+id/placeimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wordedt"
+            android:background="@drawable/place" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/selpeople"
-        android:textSize="@dimen/textsize" />
+        <EditText
+            android:id="@+id/locationedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wordedt"
+            android:layout_toRightOf="@id/placeimg"
+            android:background="#ffffff" />
 
-    <EditText
-        android:id="@+id/peopleedt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:numeric="integer" />
+        <LinearLayout
+            android:id="@+id/timeandpeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/placeimg"
+            android:layout_marginTop="5dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/word"
-        android:textSize="@dimen/textsize" />
+            <Button
+                android:id="@+id/timebtn"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/time"
+                android:textSize="@dimen/textsize" />
 
-    <EditText
-        android:id="@+id/wordedt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/peopleedt"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="인원"
+                android:numeric="integer" />
 
-    <Button
-        android:id="@+id/registration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/registration" />
-</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/timeandpeople"
+            android:layout_marginTop="10dp"
+            android:gravity="center|top">
+
+            <ImageButton
+                android:id="@+id/registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/write" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
