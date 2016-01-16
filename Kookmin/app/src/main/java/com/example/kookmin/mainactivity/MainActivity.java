@@ -11,7 +11,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -43,7 +42,6 @@ import com.example.kookmin.item.ListViewItem;
 import com.example.kookmin.login.LoginForm;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 public class MainActivity extends Activity {
     private ArrayList<Item> itemList;
@@ -151,7 +149,6 @@ public class MainActivity extends Activity {
         private ScrollView scrollView;
         private InputMethodManager imm;
 
-        @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View root = inflater.inflate(R.layout.item_view, container, false);
@@ -224,7 +221,6 @@ public class MainActivity extends Activity {
             this.position = position;
         }
 
-        @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View root = inflater.inflate(R.layout.information, container, false);
@@ -282,7 +278,6 @@ public class MainActivity extends Activity {
 
     @SuppressLint("ValidFragment")
     class FragmentBoard extends Fragment {
-        @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View root = inflater.inflate(R.layout.board, container, false);
@@ -298,7 +293,6 @@ public class MainActivity extends Activity {
 
     @SuppressLint("ValidFragment")
     class FragmentMenu extends Fragment {
-        @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View root = inflater.inflate(R.layout.main_layout, container, false);
