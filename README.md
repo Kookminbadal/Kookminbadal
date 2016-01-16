@@ -2,8 +2,8 @@
 Kookmin Univ. Hackathon
 
 ![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/main.png)
-![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/board.png)
-![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/board_article.png)
+![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/board.jpg)
+![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/board_article.jpg)
 
 더 이상 밥 혼자 먹지 마세요!!
 
