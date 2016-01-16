@@ -1,6 +1,8 @@
 # Kookminbadal
 Kookmin Univ. Hackathon
 
+![Image of Yaktocat](https://github/kookminbadal/kookminbadal/image/main.png)
+
 더 이상 밥 혼자 먹지 마세요!!
 
 친구들과 시간표가 달라 밥을 같이 못 먹었던 학생분들을 위한 어플리케이션 개발
