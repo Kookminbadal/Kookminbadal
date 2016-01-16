@@ -1,7 +1,9 @@
 # Kookminbadal
 Kookmin Univ. Hackathon
 
-![Image of Yaktocat](https://github/kookminbadal/kookminbadal/image/main.png)
+![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/main.png)
+![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/board.png)
+![GitHub Logo](https://github.com/Kookminbadal/Kookminbadal/blob/master/image/board_article.png)
 
 더 이상 밥 혼자 먹지 마세요!!
 
